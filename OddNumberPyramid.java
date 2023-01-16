@@ -24,10 +24,11 @@ Output
 
 
 */
+///First Approch..
 
 import java.util.*;
 
-public class Main {
+public class OddNumberPyramid {
 
     public static void main(String[] args) throws Throwable {
 
@@ -49,5 +50,32 @@ public class Main {
           num += 2;
           System.out.println();
        }
+    }
+}
+
+//Second Approch
+
+import java.util.Scanner;
+
+public class OddNumberPyramid {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        int count = 1;
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= count; j++) {
+                System.out.print(count);
+
+            }
+            count = count + 2;
+            System.out.println();
+        }
+
     }
 }
